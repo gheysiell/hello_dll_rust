@@ -1,0 +1,15 @@
+[package]
+name = "hello_dll_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# hello = { path = "../hello" }
+
+[lib]
+name = "hello_dll_rust"
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "hello_dll_rust"
+path = "src/main.rs"
